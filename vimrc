@@ -46,6 +46,7 @@ map <F7> :setlocal spell spelllang=en_us<CR>
 nnoremap tj :tabnext<CR>
 nnoremap tk :tabprev<CR>
 nnoremap tn :tabnew<CR>
+nnoremap tq :tabclose<CR>
 " ---------------------- PLUGIN CONFIGURATION ----------------------
 " initiate Vundle
 let &runtimepath.=',$HOME/.vim/bundle/Vundle.vim'
@@ -58,15 +59,22 @@ Plugin 'gmarik/Vundle.vim'
 "install vim-airline
 Plugin 'bling/vim-airline'
 
+"install colors
+Plugin 'flazz/vim-colorschemes'
+
 "install todo.txt vim
 Plugin 'freitass/todo.txt-vim'
 
-" install python-mode
+"install vim-surround
+Plugin 'tpope/vim-surround'
+
+"install vim-instant-markdown
+Plugin 'suan/vim-instant-markdown'
+
+"install python-mode
 Bundle 'klen/python-mode' 
 Bundle 'davidhalter/jedi-vim'
 
-"install colors
-Plugin 'flazz/vim-colorschemes'
 " end plugin definition
 call vundle#end()            " required for vundle
 
