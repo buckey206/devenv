@@ -68,9 +68,6 @@ Plugin 'freitass/todo.txt-vim'
 "install vim-surround
 Plugin 'tpope/vim-surround'
 
-"install vim-instant-markdown
-Plugin 'suan/vim-instant-markdown'
-
 "install python-mode
 Bundle 'klen/python-mode' 
 Bundle 'davidhalter/jedi-vim'
@@ -121,8 +118,7 @@ let g:pymode_folding = 0
 
 "color config
 syntax enable 
-set background=dark
-colorscheme solarized
+colorscheme wombat256 
 "USABILITY CONFIGURATION ----------------------
 "  Basic and pretty much needed settings to provide a solid base for
 "  source code editting
@@ -166,30 +162,6 @@ set viminfo='100,f1
 
 " F7 will enable spellcheck in english
 map <F7> :setlocal spell spelllang=en_us<CR>
-" ---------------------- PLUGIN CONFIGURATION ----------------------
-" initiate Vundle
-let &runtimepath.=',$HOME/.vim/bundle/Vundle.vim'
-call vundle#begin()
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-
-" start plugin defintion
-
-"install vim-airline
-Plugin 'bling/vim-airline'
-
-"install todo.txt vim
-Plugin 'freitass/todo.txt-vim'
-
-" install python-mode
-Bundle 'klen/python-mode' 
-Bundle 'davidhalter/jedi-vim'
-
-"install colors
-Plugin 'flazz/vim-colorschemes'
-
-" end plugin definition
-call vundle#end()            " required for vundle
 
 " Python-mode
 " Activate rope
@@ -231,24 +203,6 @@ let g:pymode_syntax_space_errors = g:pymode_syntax_all
 
 " Don't autofold code
 let g:pymode_folding = 0
-
-"color config
-syntax enable
-set background=dark
-colorscheme solarized
-
-"vim-airline config
-set laststatus=2
-"simple separators for buffer list
-let g:airline_left_sep=''
-let g:airline_right_sep=''
-"don't count trailing whitespace since it lags in huge files
-let g:airline#extensions#whitespace#enabled = 0
-" disable to improve fugitive performance
-let g:airline#extensions#branch#enabled = 0
-" put a buffer list at the top
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#fnamemod = ':t'
 
 "vim-airline config
 set laststatus=2
