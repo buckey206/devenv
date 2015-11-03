@@ -2,13 +2,13 @@
 
 ###Install it with: 
 ```
-git clone https://github.com/buckey206/devenv.git ~/devenv
+git clone https://github.com/buckey206/vmux.git ~/vmux
 ```
 ### Install and launch plugin installation
 ```
-chmod +x ~/devenv/install.sh
+chmod +x ~/vmux/install.sh
 ```
 Followed by 
 ```
-sh ~/devenv/install.sh
+sh ~/vmux/install.sh
 ```
