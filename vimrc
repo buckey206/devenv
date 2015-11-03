@@ -151,8 +151,6 @@ set fileencoding=utf-8
 " enable matchit plugin which ships with vim and greatly enhances '%'
 runtime macros/matchit.vim
 
-" set unix line endings
-set fileformat=unix
 " when reading files try unix line endings then dos, also use unix for new
 " buffers
 set fileformats=unix,dos
