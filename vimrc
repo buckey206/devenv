@@ -72,6 +72,10 @@ Plugin 'tpope/vim-surround'
 Bundle 'klen/python-mode' 
 Bundle 'davidhalter/jedi-vim'
 
+"install markdown/pandocs 
+Plugin 'vim-pandoc/vim-pandoc'
+"Plugin 'vim-pandoc/vim-pandoc-syntax' 
+
 " end plugin definition
 call vundle#end()            " required for vundle
 
@@ -140,7 +144,7 @@ filetype plugin on
 filetype indent on
 
 "show existing tab with 4 spaces width
-set tabstop = 4
+set tabstop=4
 "when indenting with '>', use 4 spaces width
 set shiftwidth=4
 " on pressing tab, insert 4 spaces
@@ -220,3 +224,6 @@ let g:airline#extensions#branch#enabled = 0
 " put a buffer list at the top
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#fnamemod = ':t'
+
+"vim-pandoc config
+let b:pandoc_command_autoexec_command = "Pandoc! html"
