@@ -62,14 +62,11 @@ Plugin 'bling/vim-airline'
 "install colors
 Plugin 'flazz/vim-colorschemes'
 
-"install todo.txt vim
-Plugin 'freitass/todo.txt-vim'
-
 "install vim-surround
 Plugin 'tpope/vim-surround'
 
 "install markdown/pandocs 
-Plugin 'vim-pandoc/vim-pandoc'
+"Plugin 'vim-pandoc/vim-pandoc'
 "Plugin 'vim-pandoc/vim-pandoc-syntax' 
 
 " end plugin definition
